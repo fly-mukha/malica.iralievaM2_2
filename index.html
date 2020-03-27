@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Подбор оптимального вклада</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h2>Подбор оптимального вклада</h2>
+    <section class='form'>
+
+        <div class='inputField'>
+            <p> Начальная сумма </p>
+            <input type="text" id="inputInitial" />
+        </div>
+
+        <div class='inputField'>
+            <p> Сумма ежемесячного пополнения </p>
+            <input type="text" id="inputMonthly" />
+        </div>
+
+        <div class='inputField'>
+            <p> Срок вклада, месяцев </p>
+            <input type="text" id="inputTerm" />
+        </div>
+
+        <div class='inputField'>
+            <p> Валюта вклада </p>
+            <input type="text" id="inputCurrency" />
+        </div>
+
+        <button id='button'> Подобрать </button>
+
+        <p id='no-options' class='hidden'> Нет подходящих вариантов </p>
+    </section>
+
+    <section id='bankProduct' class='hidden'>
+        <h2>Предлагаемые вклады</h2>
+        <table id='productTable'>
+        </table>
+    </section>
+
+    <script src="deposit.js"></script>
+
+</body>
+
+</html>
