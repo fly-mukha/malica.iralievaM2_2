@@ -71,9 +71,6 @@ class BankProduct {
         this.investName = bank.investName;
         this.incomeType = bank.incomeType;
     }
-
-
-
 }
 
 // Класс Calculator, инициализирующийся массивом продуктов BankProduct и вычисляющий наиболее выгодный вариант.
